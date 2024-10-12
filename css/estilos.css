@@ -1,0 +1,301 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000; /* Color de fondo modificado */
+    box-shadow: 0px 2px 5px #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav li a {
+    color: #ffffff; /* Color de texto modificado */
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif
+    
+}
+
+nav li a:hover {
+    color: #d30d06;
+    text-decoration: underline; /* Cambio de estilo al pasar el mouse */
+}
+
+.logo {
+    padding: 0 15px;
+}
+
+.logo img {
+    width: 120px; /* Tamaño de imagen modificado */
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #ffffff; /* Color de iconos modificado */
+    font-size: 22px; /* Tamaño de iconos modificado */
+}
+
+.iconos a:hover {
+    color: #dfd6d6;
+}
+
+/* estilos para la sección uno */
+.principal {
+    background-image: url(../imagen/carro.jpg); 
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"Titillium Web", sans-serif;
+    
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.5); /* Más opaco para mayor legibilidad */
+}
+
+.contenidouno h1 {
+    margin-top: 200px;
+    margin-bottom: 15px;
+    font-size: 50px; /* Tamaño de fuente modificado */
+}
+
+.contenidouno h2 {
+    margin-bottom: 15px;
+    font-size: 25px; /* Tamaño de fuente modificado */
+}
+
+.contenidouno p {
+    margin-bottom: 30px;
+    font-size: 20px; /* Tamaño de fuente modificado */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button {
+    background-color: #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+.button:hover {
+    background-color: #0003d1;
+    color: #000000;
+}
+
+/* estilos para el contenido dos */
+.banner {
+    background-image: url(../imagen/cxarooblanco.jpg); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidodos {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.7); /* Más opaco para mayor legibilidad */
+}
+
+.contenidodos h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 26px; /* Tamaño de fuente modificado */
+    font-family:"Titillium Web", sans-serif;
+}
+
+.figuras {
+    display: flex;
+    justify-content: center;
+}
+
+.figuras a {
+    margin: 0 10px;
+    color: #faf7f7;
+    font-size: 22px; /* Tamaño de iconos modificado */
+}
+
+.figuras a:hover {
+    color: #020072;
+}
+
+/* creando la sección 03 del contenido de la página */
+.galeria {
+    background-color: #020061;
+    padding: 50px 0;
+    border-radius: 5px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 28px; 
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.galeria p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 10px;
+}
+
+.contenidotres {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+.contenidotres .columna {
+    flex: 1;
+    background-color: #009cf7c5; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.contenidotres .columna p {
+    margin-top: 20px;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contenidotres .columna a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #020061; 
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease; 
+}
+
+.contenidotres .columna a:hover {
+    background-color: #000811; 
+}
+
+/* creando el Footer - pie de pagina final de la pagina */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+}
+
+.filas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+h3,
+p {
+    color: #fff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.social-icons1 {
+    display: flex;
+}
+
+/* Aquí puedes agregar tu CSS */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+
+
+}
+
+.social-icons li {
+    display: inline-block;
+    
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #d5f0f4;
+    font-size: 24px;
+    transition: color 0.3s;
+   
+
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Cambia esto según el color que desees para el hover */
+    
+
+}
+
+  
